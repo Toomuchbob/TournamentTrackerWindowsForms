@@ -36,8 +36,8 @@ namespace TrackerUI
             this.placeNameLabel = new System.Windows.Forms.Label();
             this.prizeAmountValue = new System.Windows.Forms.TextBox();
             this.prizeAmountLabel = new System.Windows.Forms.Label();
-            this.pricePercentValue = new System.Windows.Forms.TextBox();
-            this.prizePercentLabel = new System.Windows.Forms.Label();
+            this.prizePercentageValue = new System.Windows.Forms.TextBox();
+            this.prizePercentageLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -95,6 +95,7 @@ namespace TrackerUI
             this.prizeAmountValue.Name = "prizeAmountValue";
             this.prizeAmountValue.Size = new System.Drawing.Size(182, 35);
             this.prizeAmountValue.TabIndex = 18;
+            this.prizeAmountValue.Text = "0";
             // 
             // prizeAmountLabel
             // 
@@ -107,23 +108,24 @@ namespace TrackerUI
             this.prizeAmountLabel.TabIndex = 17;
             this.prizeAmountLabel.Text = "Prize Amount";
             // 
-            // pricePercentValue
+            // prizePercentageValue
             // 
-            this.pricePercentValue.Location = new System.Drawing.Point(221, 246);
-            this.pricePercentValue.Name = "pricePercentValue";
-            this.pricePercentValue.Size = new System.Drawing.Size(182, 35);
-            this.pricePercentValue.TabIndex = 20;
+            this.prizePercentageValue.Location = new System.Drawing.Point(221, 246);
+            this.prizePercentageValue.Name = "prizePercentageValue";
+            this.prizePercentageValue.Size = new System.Drawing.Size(182, 35);
+            this.prizePercentageValue.TabIndex = 20;
+            this.prizePercentageValue.Text = "0";
             // 
-            // prizePercentLabel
+            // prizePercentageLabel
             // 
-            this.prizePercentLabel.AutoSize = true;
-            this.prizePercentLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.prizePercentLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.prizePercentLabel.Location = new System.Drawing.Point(12, 243);
-            this.prizePercentLabel.Name = "prizePercentLabel";
-            this.prizePercentLabel.Size = new System.Drawing.Size(212, 37);
-            this.prizePercentLabel.TabIndex = 19;
-            this.prizePercentLabel.Text = "Prize Percentage";
+            this.prizePercentageLabel.AutoSize = true;
+            this.prizePercentageLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.prizePercentageLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.prizePercentageLabel.Location = new System.Drawing.Point(12, 243);
+            this.prizePercentageLabel.Name = "prizePercentageLabel";
+            this.prizePercentageLabel.Size = new System.Drawing.Size(212, 37);
+            this.prizePercentageLabel.TabIndex = 19;
+            this.prizePercentageLabel.Text = "Prize Percentage";
             // 
             // orLabel
             // 
@@ -160,8 +162,8 @@ namespace TrackerUI
             this.ClientSize = new System.Drawing.Size(413, 356);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.orLabel);
-            this.Controls.Add(this.pricePercentValue);
-            this.Controls.Add(this.prizePercentLabel);
+            this.Controls.Add(this.prizePercentageValue);
+            this.Controls.Add(this.prizePercentageLabel);
             this.Controls.Add(this.prizeAmountValue);
             this.Controls.Add(this.prizeAmountLabel);
             this.Controls.Add(this.placeNameValue);
@@ -186,9 +188,10 @@ namespace TrackerUI
         private System.Windows.Forms.Label placeNameLabel;
         private System.Windows.Forms.TextBox prizeAmountValue;
         private System.Windows.Forms.Label prizeAmountLabel;
-        private System.Windows.Forms.TextBox pricePercentValue;
-        private System.Windows.Forms.Label prizePercentLabel;
+        private System.Windows.Forms.TextBox prizePercentValue;
+        private System.Windows.Forms.Label prizePercentageLabel;
         private System.Windows.Forms.Label orLabel;
         private System.Windows.Forms.Button createPrizeButton;
+        private System.Windows.Forms.TextBox prizePercentageValue;
     }
 }
