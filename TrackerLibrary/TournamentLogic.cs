@@ -34,6 +34,7 @@ namespace TrackerLibrary
 
                     if (currMatchup.Entries.Count > 1)
                     {
+                        currMatchup.MatchupRound = round;
                         currRound.Add(currMatchup);
                         currMatchup = new MatchupModel();
                     }
