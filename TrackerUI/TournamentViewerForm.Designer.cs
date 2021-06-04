@@ -85,6 +85,7 @@ namespace TrackerUI
             this.roundDropdown.Name = "roundDropdown";
             this.roundDropdown.Size = new System.Drawing.Size(209, 38);
             this.roundDropdown.TabIndex = 3;
+            this.roundDropdown.SelectedIndexChanged += new System.EventHandler(this.roundDropdown_SelectedIndexChanged);
             // 
             // unplayedOnlyCheckbox
             // 
@@ -104,10 +105,11 @@ namespace TrackerUI
             this.matchupListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.matchupListBox.FormattingEnabled = true;
             this.matchupListBox.ItemHeight = 30;
-            this.matchupListBox.Location = new System.Drawing.Point(12, 150);
+            this.matchupListBox.Location = new System.Drawing.Point(29, 153);
             this.matchupListBox.Name = "matchupListBox";
-            this.matchupListBox.Size = new System.Drawing.Size(309, 242);
+            this.matchupListBox.Size = new System.Drawing.Size(292, 242);
             this.matchupListBox.TabIndex = 5;
+            this.matchupListBox.SelectedIndexChanged += new System.EventHandler(this.matchupListBox_SelectedIndexChanged);
             // 
             // teamOneName
             // 
@@ -216,7 +218,6 @@ namespace TrackerUI
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "TournamentViewerForm";
             this.Text = "Tournament Viewer";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
